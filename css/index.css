@@ -1,0 +1,202 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: SpotifyUI;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--mainBG);
+  border-radius: var(--mainRadius);
+  width: 40vw;
+  height: 80vh;
+}
+
+#container span {
+  font-family: SpotifyUITitle;
+  font-size: 2.2rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  filter: brightness(10);
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+}
+#enterbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#loginbtnsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.loginbtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.loginbtn {
+  font-family: SpotifyUI !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  width: 90%;
+  border-radius: 50px;
+  display: flex;
+  height: 5vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.loginbtn:hover {
+  border: 1px solid rgba(255, 255, 255);
+}
+.green {
+  border: none !important;
+  background-color: var(--green) !important;
+  color: white;
+}
+#apple {
+  filter: invert(1);
+}
+#register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+#register input {
+  border: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: transparent;
+  width: 80%;
+  border-radius: var(--smallRadius);
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#register input::placeholder {
+  color: rgba(255, 255, 255, 0.555);
+}
+.registerinput p {
+  width: 80%;
+}
+.registerinput {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+#noaccount {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.603);
+}
+#noaccount a {
+  color: white;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  margin: 20px 0;
+}
+
+#container section {
+  width: 45%;
+}
+
+footer {
+  margin-top: 10vh;
+  margin-bottom: -3vh;
+}
+
+@media screen and (max-width: 1030px) {
+  #container {
+    width: 80vw;
+  }
+  .loginbtn {
+    font-size: 0.9rem !important;
+    width: 80%;
+  }
+
+  #container span {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logo {
+    margin-top: 140px;
+  }
+  #container {
+    width: 100vw;
+  }
+  #logo img {
+    width: 20px;
+    height: 20px;
+  }
+  #register input {
+    width: 100%;
+  }
+  #noaccount {
+    width: 50% !important;
+    text-align: center;
+  }
+  .registerinput p {
+    width: 100%;
+  }
+  hr {
+    margin-top: 50px;
+  }
+  footer p {
+    font-size: 0.6rem !important;
+    width: 60%;
+    text-align: center;
+  }
+  #enterbtn{
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: 20vh;
+    margin-bottom: -20vh;
+  }
+  body {
+    background: var(--mainBG) !important;
+  }
+  #container section {
+    width: 80%;
+  }
+
+  .loginbtn {
+    height: 7vh;
+    font-size: 0.9rem !important;
+    width: 100%;
+  }
+}

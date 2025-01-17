@@ -1,0 +1,61 @@
+:root{
+    --mainBG: #121212;
+    --mainRadius: 8px;
+    --smallRadius: 4px;
+    --green: #1db954;
+}
+
+
+/*============ fonts ============*/
+@font-face {
+    font-family: SpotifyUI;
+    src: url(../assets/fonts/SpotifyMixUI-Regular.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SpotifyUITitle;
+    src: url(../assets/fonts/SpotifyMixUITitle.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    font-family: SpotifyUI;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 85%);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.336);
+    font-size: .7rem !important;
+    background-color: var(--mainBG);
+    height: 7vh;
+}
+
+body :visited{
+    color: rgba(255, 255, 255, 0.616) !important;
+}
+
+a:hover{
+    color: var(--green) !important;
+}
+
+body :link{
+    color: rgba(255, 255, 255, 0.616) !important;
+}
