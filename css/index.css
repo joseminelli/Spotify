@@ -167,6 +167,7 @@ footer {
   }
   #noaccount {
     width: 50% !important;
+    margin-bottom: 50px;
     text-align: center;
   }
   .registerinput p {
